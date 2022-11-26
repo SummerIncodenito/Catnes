@@ -1,0 +1,214 @@
+:root{
+    --primary:#91c520;
+    --secondary:#fe8800;
+    --light:#f5f5f5;
+    --dark:#14141f;
+    
+}
+.btn-sm-square{
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 0px;
+}
+#mac{
+    background-image: url('binurong.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    font-family:'Nuito', sans-serif ;
+    position: relative;
+    margin-right:25px ;
+    padding: 35px;
+    color: #090202 !important;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.05s;
+    outline: none;
+}
+@media(min-width:992px){
+    .navbar-light{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom:1px solid #110202 ;
+        z-index: 999; 
+    }
+    .navbar-light .navbar-nav .nav-link::before{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        background: var(--primary);
+        transition: 0.05s;
+
+    }
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link:active::before{
+        width:calc(100%- 2px) ;
+        left:1px ;
+    }
+
+}
+@media(min-width:991.98px){
+    .navbar-light .navbar-collapse{
+        margin-top: 15px;
+       
+    }
+    .navbar-light .navbar-nav .navbar-link{
+        padding: 10px 0;
+        margin-left: 0;
+        color: var(--dark);
+        
+
+    }
+}
+
+
+
+
+
+
+.service-item{
+    box-shadow: 0 0 45px rgba(0,0,0,0,08);
+    transition: 0.5s;
+}
+
+.service-item:hover{
+    background: var(--primary);
+}
+.service-item *{
+    transition: 0.5s;
+}
+.service-item:hover*{
+    color: var(--light) !important;
+}
+
+.destination img{
+    transition: 0.5s;
+
+}
+.destination a:hover img{
+    transform: scale(1.1);
+}
+.destination h1{
+    text-align: center;
+}
+
+.package-item{
+    box-shadow: 0 0 45px rgba(0,0,0,0.08);
+}
+.package-item img{
+    transition: 0.05s;
+}
+.package-item:hover img{
+    transform: scale(1.1);
+}
+.btn{
+    font-family:'Nuito', sans-serif ;
+    font-weight: 600;
+    transition:0.05s;
+}
+.btn.btn-primary,
+.btn.btn-secondary{
+    color: #ffffff;
+}
+.btn-square{
+    width: 38px;
+    height: 38px;
+}
+/*===============booking=====*/
+.booking{
+    background: linear-gradient(rgba(15, 23, 43,0.7),rgba(15, 23, 43,0.7)), url(../Travel/puraran.jpg);
+    background-position: center center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+/*=======team=====*/
+.team-item{
+    box-shadow: 0 0  45px rgba(0, 0, 0, 0.08);
+}
+.team-item img{
+    transition: 0.05s;
+}
+.team-item:hover img{
+    transform: scale(1.1);
+}
+.team-item .btn{
+    background: #ffffff;
+    color: var(--primary);
+    border-radius: 35px;
+    border-bottom: 1 px solid var(--primary);
+
+}
+.team-item .btn:hover{
+    background: var(--primary);
+    color: #ffffff;
+}
+.footer .btn.btn-social{
+   margin-right: 5px; 
+   width: 35px;
+   height: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--light);
+   font-weight: normal;
+   border: 1 solid #ffffff;
+   border-radius: 35px;
+   transition: 0.03s;
+}
+.footer .btn.btn-social:hover{
+   color: var(--primary); 
+}
+.footer .btn.btn-link{
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: 0.03s;
+}
+.footer .btn.btn-link::before{
+    position: relative;
+    content: ""\105;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+.footer .btn.btn-link:hover{
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+.footer .copyright{
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px var(--light);
+
+}
+.footer .footer-menu{
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px --light;
+}
+.footer .footer-menu{
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+
+
